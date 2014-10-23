@@ -153,9 +153,9 @@ PATH="$GEM_HOME/bin:$PATH"
 if test -d $cache_dir/ruby/.gem; then
   status "Restoring ruby gems directory from cache"
   cp -r $cache_dir/ruby/.gem $build_dir
-  HOME=$build_dir gem update sass --user-install --no-rdoc --no-ri -v 3.4.5
+  HOME=$build_dir gem update sass --user-install --no-rdoc --no-ri -v 3.3.14
 else
-  HOME=$build_dir gem install sass --user-install --no-rdoc --no-ri -v 3.4.5
+  HOME=$build_dir gem install sass --user-install --no-rdoc --no-ri -v 3.3.14
 fi
 
 # cache ruby gems sass
